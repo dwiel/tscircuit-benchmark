@@ -7,7 +7,7 @@ Boards range from 3 to 35 components, all 2-layer. Generated from plain-English 
 ## Install
 
 ```bash
-bun add https://github.com/zdwiel/tscircuit-benchmark
+bun add https://github.com/dwiel/tscircuit-benchmark
 ```
 
 ## Usage
