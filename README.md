@@ -1,13 +1,26 @@
 # tscircuit Autorouting Benchmark
 
-36 real-world PCB designs exported as circuit JSON from [pcbgen](https://github.com/dwiel/ai-pcb-experiment), an AI-driven PCB design pipeline built on [tscircuit](https://github.com/tscircuit/tscircuit).
+36 real-world PCB designs as Simple Route JSON, converted from circuit JSON exported by [pcbgen](https://github.com/dwiel/ai-pcb-experiment), an AI-driven PCB design pipeline built on [tscircuit](https://github.com/tscircuit/tscircuit).
 
-These boards range from 3 to 35 components and were generated from plain-English specs by an LLM, then routed with Freerouting. All are 2-layer boards.
+Boards range from 3 to 35 components, all 2-layer. Generated from plain-English specs by an LLM, then routed with Freerouting.
+
+## Install
+
+```bash
+bun add https://github.com/zdwiel/tscircuit-benchmark
+```
+
+## Usage
+
+```ts
+import { ts01_led, ts18_dual_reg } from "tscircuit-benchmark"
+```
 
 ## Files
 
-- `ts*.circuit.json` — circuit JSON files, one per board
-- `metadata.json` — routing comparison data (freerouting vs auto-cloud)
+- `samples/*.json` — Simple Route JSON files, one per board
+- `index.ts` — exports all samples
+- `scripts/convert-to-srj.ts` — conversion script (circuit JSON → SRJ)
 
 ## Board Summary
 
@@ -49,19 +62,6 @@ These boards range from 3 to 35 components and were generated from plain-English
 | ts34_usb_can | 25 | 8 | clean | 128 errors |
 | ts35_thermocouple | 8 | 3 | clean | unrouted |
 | ts36_esc | 35 | 10 | clean | unrouted |
-
-### Routing Comparison
-
-- **Both clean**: 7 boards (ts01, ts02, ts03, ts08, ts10, ts15, ts28)
-- **Auto-cloud routed with errors**: 17 boards
-- **Freerouting-only** (auto-cloud returned 0 traces): 10 boards
-- **Neither routed**: 1 board (ts29)
-
-## How These Were Made
-
-Each board starts as a plain-English `spec.md` file describing the circuit. An LLM generates tscircuit TSX code, which is exported to KiCad PCB format and routed with Freerouting (Java-based DSN autorouter). The pipeline validates with KiCad DRC.
-
-Auto-cloud results were collected by injecting `autorouter={{ preset: "auto-cloud" }}` into the board element and re-exporting via `tsci`. Tested March 2026.
 
 ## License
 
