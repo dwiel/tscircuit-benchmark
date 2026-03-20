@@ -16,11 +16,32 @@ bun add https://github.com/dwiel/tscircuit-benchmark
 import { ts01_led, ts18_dual_reg } from "tscircuit-benchmark"
 ```
 
+## Dataset Policy
+
+This benchmark dataset is intended for **on-board autorouting evaluation**.
+
+- `externallyConnectedPointIds` are intentionally removed from sample SRJ files.
+- This ensures benchmark nets are not pre-short-circuited by off-board equivalence metadata.
+
+## Scripts
+
+```bash
+# Generate SRJ from *.circuit.json (if present) and sanitize all samples
+bun run convert
+
+# Check-only mode for CI guardrails
+bun run validate
+```
+
+Notes:
+- If no `*.circuit.json` files exist in the repo root, generation is skipped.
+- Sanitization and validation still run against `samples/*.json`.
+
 ## Files
 
 - `samples/*.json` — Simple Route JSON files, one per board
 - `index.ts` — exports all samples
-- `scripts/convert-to-srj.ts` — conversion script (circuit JSON → SRJ)
+- `scripts/convert-to-srj.ts` — unified generate + sanitize + `--check` validator script
 
 ## Board Summary
 

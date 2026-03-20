@@ -241,12 +241,6 @@
           "pointId": "pcb_port_1",
           "pcb_port_id": "pcb_port_1"
         }
-      ],
-      "externallyConnectedPointIds": [
-        [
-          "pcb_port_1",
-          "pcb_port_4"
-        ]
       ]
     }
   ],

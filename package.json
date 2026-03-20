@@ -2,5 +2,10 @@
   "name": "tscircuit-benchmark",
   "version": "1.0.0",
   "type": "module",
-  "main": "index.ts"
+  "main": "index.ts",
+  "scripts": {
+    "convert": "bun scripts/convert-to-srj.ts",
+    "validate": "bun scripts/convert-to-srj.ts --check",
+    "check": "bun run validate"
+  }
 }
