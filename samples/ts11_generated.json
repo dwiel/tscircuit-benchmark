@@ -2560,32 +2560,6 @@
           "pointId": "pcb_port_48",
           "pcb_port_id": "pcb_port_48"
         }
-      ],
-      "externallyConnectedPointIds": [
-        [
-          "pcb_port_44",
-          "pcb_port_13"
-        ],
-        [
-          "pcb_port_46",
-          "pcb_port_21"
-        ],
-        [
-          "pcb_port_48",
-          "pcb_port_29"
-        ],
-        [
-          "pcb_port_46",
-          "pcb_port_13"
-        ],
-        [
-          "pcb_port_0",
-          "pcb_port_21"
-        ],
-        [
-          "pcb_port_48",
-          "pcb_port_13"
-        ]
       ]
     },
     {
@@ -2675,52 +2649,6 @@
           "pointId": "pcb_port_26",
           "pcb_port_id": "pcb_port_26"
         }
-      ],
-      "externallyConnectedPointIds": [
-        [
-          "pcb_port_49",
-          "pcb_port_26"
-        ],
-        [
-          "pcb_port_45",
-          "pcb_port_10"
-        ],
-        [
-          "pcb_port_47",
-          "pcb_port_18"
-        ],
-        [
-          "pcb_port_26",
-          "pcb_port_25"
-        ],
-        [
-          "pcb_port_10",
-          "pcb_port_9"
-        ],
-        [
-          "pcb_port_18",
-          "pcb_port_17"
-        ],
-        [
-          "pcb_port_41",
-          "pcb_port_25"
-        ],
-        [
-          "pcb_port_47",
-          "pcb_port_9"
-        ],
-        [
-          "pcb_port_5",
-          "pcb_port_41"
-        ],
-        [
-          "pcb_port_1",
-          "pcb_port_17"
-        ],
-        [
-          "pcb_port_49",
-          "pcb_port_9"
-        ]
       ]
     },
     {
@@ -2747,16 +2675,6 @@
           "pointId": "pcb_port_36",
           "pcb_port_id": "pcb_port_36"
         }
-      ],
-      "externallyConnectedPointIds": [
-        [
-          "pcb_port_30",
-          "pcb_port_6"
-        ],
-        [
-          "pcb_port_36",
-          "pcb_port_6"
-        ]
       ]
     },
     {
@@ -2783,16 +2701,6 @@
           "pointId": "pcb_port_34",
           "pcb_port_id": "pcb_port_34"
         }
-      ],
-      "externallyConnectedPointIds": [
-        [
-          "pcb_port_34",
-          "pcb_port_31"
-        ],
-        [
-          "pcb_port_31",
-          "pcb_port_7"
-        ]
       ]
     },
     {
@@ -2819,16 +2727,6 @@
           "pointId": "pcb_port_38",
           "pcb_port_id": "pcb_port_38"
         }
-      ],
-      "externallyConnectedPointIds": [
-        [
-          "pcb_port_32",
-          "pcb_port_14"
-        ],
-        [
-          "pcb_port_38",
-          "pcb_port_14"
-        ]
       ]
     },
     {
@@ -2855,16 +2753,6 @@
           "pointId": "pcb_port_35",
           "pcb_port_id": "pcb_port_35"
         }
-      ],
-      "externallyConnectedPointIds": [
-        [
-          "pcb_port_33",
-          "pcb_port_15"
-        ],
-        [
-          "pcb_port_35",
-          "pcb_port_33"
-        ]
       ]
     },
     {
@@ -2891,16 +2779,6 @@
           "pointId": "pcb_port_43",
           "pcb_port_id": "pcb_port_43"
         }
-      ],
-      "externallyConnectedPointIds": [
-        [
-          "pcb_port_43",
-          "pcb_port_23"
-        ],
-        [
-          "pcb_port_37",
-          "pcb_port_23"
-        ]
       ]
     },
     {
@@ -2927,16 +2805,6 @@
           "pointId": "pcb_port_40",
           "pcb_port_id": "pcb_port_40"
         }
-      ],
-      "externallyConnectedPointIds": [
-        [
-          "pcb_port_40",
-          "pcb_port_24"
-        ],
-        [
-          "pcb_port_39",
-          "pcb_port_24"
-        ]
       ]
     },
     {
@@ -2963,16 +2831,6 @@
           "pointId": "pcb_port_4",
           "pcb_port_id": "pcb_port_4"
         }
-      ],
-      "externallyConnectedPointIds": [
-        [
-          "pcb_port_4",
-          "pcb_port_42"
-        ],
-        [
-          "pcb_port_42",
-          "pcb_port_22"
-        ]
       ]
     }
   ],
